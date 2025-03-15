@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev -p 5000",
+    "start": "next start -p 5000"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@fontsource/roboto": "^5.2.5",
+    "@mui/icons-material": "^6.4.7",
+    "@mui/material": "^6.4.7",
+    "i18next": "^24.2.3",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-i18next": "^15.4.1"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "22.13.10",
+    "typescript": "^5.8.2"
+  }
+}
