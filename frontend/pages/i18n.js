@@ -7,6 +7,11 @@ i18n
     lng: 'jp',
     fallbackLng: 'en',
     ns: ["Common"],
+    react: {
+      bindI18n: 'loaded languageChanged',
+      bindI18nStore: 'added',
+      useSuspense: true,
+    },
   });
 
   export default i18n;

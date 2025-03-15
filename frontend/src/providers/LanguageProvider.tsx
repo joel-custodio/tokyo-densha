@@ -1,13 +1,14 @@
-import React, { createContext, useContext, useMemo, useState } from "react";
+import React, { createContext, useContext, useMemo } from "react";
+import { useTranslation } from "next-i18next";
 
 interface LanguageContextType {
   systemLanguage: { value: string; name: string };
-  handleSystemLanguage: (value: string) => void;
+  supportedLanguages: { value: string; name: string }[];
 }
 
 const LanguageContext = createContext<LanguageContextType>({
   systemLanguage: { value: "en", name: "English" },
-  handleSystemLanguage: () => {},
+  supportedLanguages: [],
 });
 
 export const useLanguageSettings = () => {
@@ -15,24 +16,23 @@ export const useLanguageSettings = () => {
 };
 
 export default function LanguageProvider({ children }) {
-  const [systemLanguage, setSystemLanguage] = useState<{
-    value: string;
-    name: string;
-  }>({ value: "en", name: "English" });
-
-  const handleSystemLanguage = (value: string) => {
-    const selected = supportedLanguages.find(
-      (language) => language.value === value
-    );
-    setSystemLanguage(selected);
-  };
+  const { i18n } = useTranslation();
 
   const supportedLanguages = useMemo(() => {
-    return [{ value: "en", name: "English" }];
+    return [
+      { value: "en", name: "English" },
+      { value: "jp", name: "Japanese" },
+    ];
   }, []);
 
+  const systemLanguage = useMemo(() => {
+    return supportedLanguages.find(
+      (language) => language.value === i18n.language
+    );
+  }, [i18n.language, supportedLanguages]);
+
   return (
-    <LanguageContext.Provider value={{ systemLanguage, handleSystemLanguage }}>
+    <LanguageContext.Provider value={{ systemLanguage, supportedLanguages }}>
       {children}
     </LanguageContext.Provider>
   );

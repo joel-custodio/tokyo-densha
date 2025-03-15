@@ -18,7 +18,7 @@ export default async function loadAllTranslations(req, locale) {
   );
 
   // Use NEXT_LOCALE if available
-  const localeToUse = req.cookies?.NEXT_LOCALE || locale;
+  const localeToUse = req?.cookies?.NEXT_LOCALE || locale;
 
   // Local translation data based on locale
   const translationData = await serverSideTranslations(
