@@ -1,7 +1,7 @@
 import React from "react";
 import loadAllTranslations from "../src/config/loadAllTranslations";
 
-export async function getServerSideProps({ req, locale }) {
+export async function getStaticProps({ req, locale }) {
   return {
     props: {
       ...(await loadAllTranslations(req, locale)),

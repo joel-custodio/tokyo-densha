@@ -1,2 +1,1 @@
-# 東京電車
-Tokyo Subway Helper
+This is a starter template for [Learn Next.js](https://nextjs.org/learn).
