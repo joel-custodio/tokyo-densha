@@ -10,7 +10,7 @@ export default function PageHeader() {
         width: "100vw",
         height: "50px",
         backgroundColor: "#85B82D",
-        position: "fixed",
+        position: "sticky",
         display: "flex",
         alignItems: "center",
         padding: "0 16px",

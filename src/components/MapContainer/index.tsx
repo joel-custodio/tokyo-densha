@@ -2,14 +2,15 @@ import React from "react";
 import Connector from "./components/Connector";
 import LineIcon from "./components/LineIcon";
 import ArcConnector from "./components/ArcConnector";
+import { getStations } from "../../api/stations.api";
 
 export default function MapContainer() {
+  getStations();
   return (
     <svg
-      width="100vw"
+      width="calc(100vw - 300px)"
       height="calc(100vh - 50px)"
       // viewBox="0 0 200 200"
-      style={{ position: "relative", top: "50px", cursor: "pointer" }}
     >
       <ArcConnector alignment="top-left" startX={300} startY={120} />
       <LineIcon

@@ -3,8 +3,8 @@
  */
 module.exports = {
   i18n: {
-      locales: ["en", "jp"],
-      defaultLocale: "jp",
-      localeDetection: true,
-  }
-}
+    locales: ["en", "jp"],
+    defaultLocale: "jp",
+    // localeDetection: true,
+  },
+};
