@@ -9,5 +9,8 @@ export const getStations = async (lineId?: number) => {
       "Content-Type": "application/json",
     },
   });
-  console.log("res", response);
+  if (response.status === 200) {
+    return response.json();
+  }
+  return [];
 };

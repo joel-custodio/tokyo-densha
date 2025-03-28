@@ -2,10 +2,8 @@ import React from "react";
 import Connector from "./components/Connector";
 import LineIcon from "./components/LineIcon";
 import ArcConnector from "./components/ArcConnector";
-import { getStations } from "../../api/stations.api";
 
 export default function MapContainer() {
-  getStations();
   return (
     <svg
       width="calc(100vw - 300px)"
