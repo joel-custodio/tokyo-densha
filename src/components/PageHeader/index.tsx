@@ -9,7 +9,7 @@ export default function PageHeader() {
       sx={{
         width: "100vw",
         height: "50px",
-        backgroundColor: "#85B82D",
+        backgroundColor: "background.secondary",
         position: "sticky",
         display: "flex",
         alignItems: "center",

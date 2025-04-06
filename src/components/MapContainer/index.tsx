@@ -2,6 +2,7 @@ import React from "react";
 import Connector from "./components/Connector";
 import LineIcon from "./components/LineIcon";
 import ArcConnector from "./components/ArcConnector";
+import MultiLineStationIcon from "./components/MultiLineStationIcon";
 
 export default function MapContainer() {
   return (
@@ -14,7 +15,6 @@ export default function MapContainer() {
       <LineIcon
         startX={600}
         startY={720}
-        strokeColor="#85B82D"
         linePrefix="JY"
         stationNumber="30"
         title="Yūrakuchō"
@@ -23,7 +23,6 @@ export default function MapContainer() {
       <LineIcon
         startX={540}
         startY={720}
-        strokeColor="#85B82D"
         linePrefix="JY"
         stationNumber="29"
         title="Shimbashi"
@@ -32,7 +31,6 @@ export default function MapContainer() {
       <LineIcon
         startX={480}
         startY={720}
-        strokeColor="#85B82D"
         linePrefix="JY"
         stationNumber="28"
         title="Hamamatsuchō"
@@ -41,7 +39,6 @@ export default function MapContainer() {
       <LineIcon
         startX={420}
         startY={720}
-        strokeColor="#85B82D"
         linePrefix="JY"
         stationNumber="27"
         title="Tamachi"
@@ -50,7 +47,6 @@ export default function MapContainer() {
       <LineIcon
         startX={360}
         startY={720}
-        strokeColor="#85B82D"
         linePrefix="JY"
         stationNumber="26"
         title="Takanawa Gateway"
@@ -59,7 +55,6 @@ export default function MapContainer() {
       <LineIcon
         startX={300}
         startY={720}
-        strokeColor="#85B82D"
         linePrefix="JY"
         stationNumber="25"
         title="Shinagawa"
@@ -68,7 +63,6 @@ export default function MapContainer() {
       <LineIcon
         startX={230}
         startY={650}
-        strokeColor="#85B82D"
         linePrefix="JY"
         stationNumber="24"
         title="Ōsaki"
@@ -77,7 +71,6 @@ export default function MapContainer() {
       <LineIcon
         startX={230}
         startY={590}
-        strokeColor="#85B82D"
         linePrefix="JY"
         stationNumber="23"
         title="Gotanda"
@@ -86,7 +79,6 @@ export default function MapContainer() {
       <LineIcon
         startX={230}
         startY={530}
-        strokeColor="#85B82D"
         linePrefix="JY"
         stationNumber="22"
         title="Meguro"
@@ -95,7 +87,6 @@ export default function MapContainer() {
       <LineIcon
         startX={230}
         startY={470}
-        strokeColor="#85B82D"
         linePrefix="JY"
         stationNumber="21"
         title="Ebisu"
@@ -104,7 +95,6 @@ export default function MapContainer() {
       <LineIcon
         startX={230}
         startY={410}
-        strokeColor="#85B82D"
         linePrefix="JY"
         stationNumber="20"
         title="Shibuya"
@@ -113,7 +103,6 @@ export default function MapContainer() {
       <LineIcon
         startX={230}
         startY={350}
-        strokeColor="#85B82D"
         linePrefix="JY"
         stationNumber="19"
         title="Harajuku"
@@ -122,7 +111,6 @@ export default function MapContainer() {
       <LineIcon
         startX={230}
         startY={290}
-        strokeColor="#85B82D"
         linePrefix="JY"
         stationNumber="18"
         title="Yoyogi"
@@ -131,7 +119,6 @@ export default function MapContainer() {
       <LineIcon
         startX={230}
         startY={230}
-        strokeColor="#85B82D"
         linePrefix="JY"
         stationNumber="17"
         title="Shinjuku"
@@ -140,7 +127,6 @@ export default function MapContainer() {
       <LineIcon
         startX={230}
         startY={170}
-        strokeColor="#85B82D"
         linePrefix="JY"
         stationNumber="16"
         title="Shin-Ōkubo"
@@ -149,7 +135,6 @@ export default function MapContainer() {
       <LineIcon
         startX={300}
         startY={100}
-        strokeColor="#85B82D"
         linePrefix="JY"
         stationNumber="15"
         title="Takadanobaba"
@@ -158,7 +143,6 @@ export default function MapContainer() {
       <LineIcon
         startX={360}
         startY={100}
-        strokeColor="#85B82D"
         linePrefix="JY"
         stationNumber="14"
         title="Mejiro"
@@ -167,7 +151,6 @@ export default function MapContainer() {
       <LineIcon
         startX={420}
         startY={100}
-        strokeColor="#85B82D"
         linePrefix="JY"
         stationNumber="13"
         title="Ikebukuro"
@@ -177,7 +160,6 @@ export default function MapContainer() {
       <LineIcon
         startX={480}
         startY={100}
-        strokeColor="#85B82D"
         linePrefix="JY"
         stationNumber="12"
         title="Ōtsuka"
@@ -187,7 +169,6 @@ export default function MapContainer() {
       <LineIcon
         startX={540}
         startY={100}
-        strokeColor="#85B82D"
         linePrefix="JY"
         stationNumber="11"
         title="Sugamo"
@@ -196,7 +177,6 @@ export default function MapContainer() {
       <LineIcon
         startX={600}
         startY={100}
-        strokeColor="#85B82D"
         linePrefix="JY"
         stationNumber="10"
         title="Komagome"
@@ -205,7 +185,6 @@ export default function MapContainer() {
       <LineIcon
         startX={670}
         startY={170}
-        strokeColor="#85B82D"
         linePrefix="JY"
         stationNumber="09"
         title="Tabata"
@@ -214,7 +193,6 @@ export default function MapContainer() {
       <LineIcon
         startX={670}
         startY={230}
-        strokeColor="#85B82D"
         linePrefix="JY"
         stationNumber="08"
         title="Nishi-Nippori"
@@ -223,7 +201,6 @@ export default function MapContainer() {
       <LineIcon
         startX={670}
         startY={290}
-        strokeColor="#85B82D"
         linePrefix="JY"
         stationNumber="07"
         title="Nippori"
@@ -232,7 +209,6 @@ export default function MapContainer() {
       <LineIcon
         startX={670}
         startY={350}
-        strokeColor="#85B82D"
         linePrefix="JY"
         stationNumber="06"
         title="Uguisudani"
@@ -241,7 +217,6 @@ export default function MapContainer() {
       <LineIcon
         startX={670}
         startY={410}
-        strokeColor="#85B82D"
         linePrefix="JY"
         stationNumber="05"
         title="Ueno"
@@ -250,7 +225,6 @@ export default function MapContainer() {
       <LineIcon
         startX={670}
         startY={470}
-        strokeColor="#85B82D"
         linePrefix="JY"
         stationNumber="04"
         title="Okachimachi"
@@ -259,7 +233,6 @@ export default function MapContainer() {
       <LineIcon
         startX={670}
         startY={530}
-        strokeColor="#85B82D"
         linePrefix="JY"
         stationNumber="03"
         title="Akihabara"
@@ -268,19 +241,27 @@ export default function MapContainer() {
       <LineIcon
         startX={670}
         startY={590}
-        strokeColor="#85B82D"
         linePrefix="JY"
         stationNumber="02"
         title="Kanda"
       />
       <Connector alignment="vertical" startX={690} startY={630} />
-      <LineIcon
+      <MultiLineStationIcon
         startX={670}
         startY={650}
-        strokeColor="#85B82D"
-        linePrefix="JY"
-        stationNumber="01"
-        title="Tokyo"
+        stationName="Tokyo"
+        stations={[
+          {
+            linePrefix: "JY",
+            stationNumber: "01",
+            title: "Tokyo",
+          },
+          {
+            linePrefix: "JC",
+            stationNumber: "01",
+            title: "Tokyo",
+          },
+        ]}
       />
     </svg>
   );

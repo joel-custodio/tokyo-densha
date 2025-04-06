@@ -10,7 +10,7 @@
     "@emotion/styled": "^11.14.0",
     "@fontsource/roboto": "^5.2.5",
     "@mui/icons-material": "^6.4.7",
-    "@mui/material": "^6.4.7",
+    "@mui/material": "^6.4.10",
     "i18next": "^24.2.3",
     "lodash": "^4.17.21",
     "next": "latest",
