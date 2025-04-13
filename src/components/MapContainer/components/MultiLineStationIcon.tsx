@@ -1,6 +1,7 @@
 import React from "react";
 import LineIcon from "./LineIcon";
 import theme from "../../../../styles/theme";
+import { useTranslation } from "next-i18next";
 
 interface HorizontalConnectorProps {
   startX: number;
@@ -20,9 +21,11 @@ export default function MultiLineStationIcon({
   stationName,
   alignment = "horizontal",
 }: HorizontalConnectorProps) {
+  const { t: tStations } = useTranslation("Stations");
+
   return (
     <g cursor={"pointer"}>
-      <title>{stationName}</title>
+      <title>{tStations(stationName)}</title>
       <rect
         x={
           alignment === "horizontal"

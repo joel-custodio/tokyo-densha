@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "next-i18next";
 
 interface HorizontalConnectorProps {
   startX: number;
@@ -11,6 +12,7 @@ export default function StationLabel({
   startY,
   title,
 }: HorizontalConnectorProps) {
+  const { t: tStations } = useTranslation("Stations");
   return (
     <g>
       <text
@@ -19,7 +21,7 @@ export default function StationLabel({
         style={{ fontSize: "16px", fontWeight: 600 }}
         fontWeight={500}
       >
-        {title}
+        {tStations(title)}
       </text>
     </g>
   );

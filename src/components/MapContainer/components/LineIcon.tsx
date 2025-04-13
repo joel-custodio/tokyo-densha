@@ -1,5 +1,6 @@
 import React from "react";
 import mapLineColours from "../../../helper/mapLineColours";
+import { useTranslation } from "next-i18next";
 
 interface HorizontalConnectorProps {
   startX: number;
@@ -17,9 +18,11 @@ export default function LineIcon({
   stationNumber,
   title,
 }: HorizontalConnectorProps) {
+  const { t: tStations } = useTranslation("Stations");
+
   return (
     <g>
-      <title>{title}</title>
+      <title>{tStations(title)}</title>
       <rect
         x={startX}
         y={startY}
