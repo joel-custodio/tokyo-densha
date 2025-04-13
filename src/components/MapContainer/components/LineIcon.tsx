@@ -30,7 +30,7 @@ export default function LineIcon({
         strokeWidth={2}
         rx={10}
       ></rect>
-      <text x={startX + 15} y={startY + 15} style={{ fontSize: "11px" }}>
+      <text x={startX + 12.5} y={startY + 15} style={{ fontSize: "11px" }}>
         {linePrefix}
       </text>
       <text

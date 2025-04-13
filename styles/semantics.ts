@@ -6,7 +6,7 @@ const semantics = {
     },
     orange: {
       primary: "#FF4500",
-      secondary: "#FF4500",
+      secondary: "#FFA401",
     },
     yellow: {
       primary: "#FCD405",
@@ -14,6 +14,9 @@ const semantics = {
     },
     grey: {
       primary: "#C1C1C1",
+    },
+    blue: {
+      primary: "#04BCFB",
     },
     primary: "#0070f3",
     secondary: "#6c757d",

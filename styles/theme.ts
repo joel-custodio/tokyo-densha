@@ -18,6 +18,8 @@ const theme = {
       yamanote: semantics.colors.green.primary,
       chuo: semantics.colors.orange.primary,
       chuo_sobu: semantics.colors.yellow.primary,
+      keihin_tohoku: semantics.colors.blue.primary,
+      utsunomiya: semantics.colors.orange.secondary,
     },
     text: {
       primary: semantics.colors.text,

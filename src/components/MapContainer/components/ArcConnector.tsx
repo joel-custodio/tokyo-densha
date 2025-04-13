@@ -1,4 +1,5 @@
 import React, { useMemo } from "react";
+import mapLineColours from "../../../helper/mapLineColours";
 
 interface ArcConnectorProps {
   alignment: "top-left" | "top-right" | "bottom-left" | "bottom-right";
@@ -7,6 +8,7 @@ interface ArcConnectorProps {
   startY: number;
   color?: string;
   thickness?: number;
+  linesPrefix: string[];
 }
 
 export default function ArcConnector({
@@ -14,8 +16,8 @@ export default function ArcConnector({
   radius = 50,
   startX,
   startY,
-  color = "black",
   thickness = 3,
+  linesPrefix,
 }: ArcConnectorProps) {
   const positions = useMemo(() => {
     const adjustedStartX = alignment === "top-right" ? startX + radius : startX;
@@ -31,16 +33,18 @@ export default function ArcConnector({
     return { startX: adjustedStartX, startY: adjustedStartY, endX, endY };
   }, [alignment, startX, startY, radius]);
 
-  console.log(positions);
-
-  return (
+  return linesPrefix.map((trainLine, index) => (
     <path
       d={`
-      M ${positions.startX} ${positions.startY}
-      A ${radius} ${radius} 0 0 0 ${positions.endX} ${positions.endY}`}
+      M ${positions.startX + index * thickness} ${
+        positions.startY + index * thickness
+      }
+      A ${radius + index * thickness} ${radius + index * thickness} 0 0 0 ${
+        positions.endX + index * thickness
+      } ${positions.endY + index * thickness}`}
       fill="none"
-      stroke={color}
+      stroke={mapLineColours(trainLine, true)}
       stroke-width={thickness}
     />
-  );
+  ));
 }
